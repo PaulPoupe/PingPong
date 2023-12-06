@@ -28,4 +28,8 @@ public class Ball : MonoBehaviour
 		_rigidbody.velocity = Vector3.zero;
 		AddStartingForce();
 	}
+	public void AddForce(Vector2 force)
+	{
+		_rigidbody.AddForce(force);
+	}
 }
